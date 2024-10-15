@@ -1,0 +1,37 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    max-width: 650px;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.form input {
+    flex-basis: calc(50% - 10px); /* Subtracting margin to fit 2 inputs per line */
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agree {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 764px) {
+    .form-container {
+        flex-direction: column-reverse;
+    }
+}

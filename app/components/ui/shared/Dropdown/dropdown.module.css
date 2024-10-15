@@ -1,0 +1,22 @@
+.menu {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.open {
+  visibility: visible !important;
+  opacity: 1;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
+
+.close {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
+}
