@@ -23,6 +23,8 @@ const colors = {
   danger: "danger",
 };
 
+const mailPattern = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
 const Input: FC<InputProps> = ({
   type,
   label,
@@ -66,7 +68,7 @@ const Input: FC<InputProps> = ({
           iconPlacement == "right"
             ? InputCssModule["icon-right"]
             : InputCssModule["icon-left"],
-          (icon && "visible") || "hidden",
+          (icon && "visible" && type == 'email' && mailPattern.test(value.toString())) || "hidden",
         )}
       >
         {icon && icon}
