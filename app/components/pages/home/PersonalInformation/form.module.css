@@ -16,6 +16,11 @@
 
 .form input {
     flex-basis: calc(50% - 10px); /* Subtracting margin to fit 2 inputs per line */
+    color: var(--color-gray-lighten);
+}
+
+.form input[name='email'] {
+    color: var(--color-gray-darken) !important;
 }
 
 .profile {
