@@ -12,7 +12,7 @@ import SideBar from "./components/ui/Core/Layout/SideBar/SideBar";
 import Footer from "./components/ui/Core/Layout/Footer";
 export const metadata: Metadata = {
   title: "Resume Done",
-  description: "Css test by Jacky",
+  description: "Css test by Aaron",
 };
 
 export default function RootLayout({
